@@ -3,7 +3,7 @@ public class Main {
     //Se lo è ritorna true se non lo è lancia un'eccezione
     public static void main(String[] args){
         //try{
-            boolean isInRange = checkRange(3,2,4);
+            boolean isInRange = checkRange(1,2,4);
             System.out.println("Il numero inserito rientra nel range? " + isInRange);
         //}catch (Exception e){
             System.out.println("Errore in checkRange");
@@ -15,7 +15,7 @@ public class Main {
     //possa crearsi un errore ed evito che crashi runnandolo
     public static boolean checkRange(int num, int lower, int upper) throws Exception {
         if (num < lower || num >= upper){
-            throw new Exception("true");
+            throw new Exception("false");
         }else {
             return true;}
     }
